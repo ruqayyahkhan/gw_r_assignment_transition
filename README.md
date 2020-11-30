@@ -1,6 +1,8 @@
 # gw_r_assignment_rscraping
 GW data class assignment  
 
+This assignment uses data scraped from the Biden transition website (https://buildbackbetter.gov). 
+
 Instructions:  
   
 - First step: "Fork" this github repository using the button on the upper right. As we discussed, this will create a new version of the files that are *yours* on your own Github account and that you can change, pull from and push to as you desire.  
