@@ -7,6 +7,7 @@ library(writexl)
 
 #### SCRAPING WH STAFF LIST ######
 
+
 #set url for transition list page
 scrape_names_staff <- function(namenum) {
   #set url for nominees list page
@@ -20,7 +21,7 @@ scrape_names_staff <- function(namenum) {
   name1 <- print(html_text(names, trim = TRUE)[[namenum]])
   
   #grab the titles
-  titles <- html_nodes(content(website1), "h4")
+  titles <- html_nodes(content(website1), "span.acctext--con") # <- **NOTE THE NEW NODE NAME HERE**
   #show just one
   title1 <- print(html_text(titles, trim = TRUE)[[namenum]])
   
@@ -30,7 +31,9 @@ scrape_names_staff <- function(namenum) {
   link1 <- html_attr(links, 'href')[[namenum]]
   
   #combine into dataframe
-  df <- data.frame("name" = name1, "title" = title1, "link" = link1)
+  df <- data.frame("name" = name1, 
+                   "title" = title1,
+                   "link" = link1)
   
   return(df)
   
@@ -54,6 +57,8 @@ num_names_staff
 
 #now we'll feed the sequence of numbers into the function
 staff_data_scraped <- map_df(num_names_staff, scrape_names_staff)
+
+
 
 #add a unique ID field string
 staff_data_scraped <- staff_data_scraped %>% 
