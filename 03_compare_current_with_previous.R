@@ -14,7 +14,8 @@ source("02_scrape_nominees.R")
 #Assignment Part 1:
 
 #Write your code here that will compare the current white house staff names on the site to the
-#archived rds file storied in the archived_data folder to determine which names are new.
+#archived rds file storied in the archived_data folder to determine which names are new (archive file name
+#is staff_data_archived_2020_11_24t14_00.rds)
 
 # https://buildbackbetter.gov/the-administration/white-house-senior-staff/
 
@@ -23,6 +24,11 @@ source("02_scrape_nominees.R")
 
 
 #Your code here#
+
+# YOUR CODE
+
+
+
 
 
 
