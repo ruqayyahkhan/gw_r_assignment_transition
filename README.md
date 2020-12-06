@@ -11,7 +11,9 @@ Instructions:
   
 - Once that is done, the assignment files to be completed can be found in files prefaced with 03_ and 04_). (Files with 01_ and 02_ reflect work we did together in the last class to build the scrapers, you can leave them alone for now.)   
 
-- Assignment Part 1: Using the 03 file, "03_compare_current_with_previous.R", write your code to compare the current live WH staff list with the previously stored one located in the archived_data folder. You can use the filled-in version present in that file for Agency Review teams to help you.  
+- Assignment Part 1: Using the 03 file, "03_compare_current_with_previous.R", write your code to compare the current live WH staff list with the previously stored one located in the archived_data folder.  
+*This file is called staff_data_archived_2020_11_24t14_00.rds and contains a snapshot of the names on Nov. 24.*  
+You can use the filled-in version present in that file for Agency Review teams to help you.  
 *Along the way, you must use git to "commit" your changes at least three times*
   
 - Assignment Part 2: Using the 04 Rmarkdown file, "04_assignmentfile_markdownreport.Rmd", fill in the blank code chunks with your code designed to display the requested pieces of information. For this step, you should both figure out the necessary data slices to produce, as well as then format them for easy viewing using the table formatting package of your choice (kableExtra or gt). Note that completing this step will require both using Step 03's pre-existing code for agency review teams as well as your own new code to do the same for comparing WH senior staffers.  
